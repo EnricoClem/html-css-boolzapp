@@ -32,18 +32,7 @@ img {
     width: 100vw;
     height: 100vh;
     padding: 2% 0;
-    background-color: var(--background_gray);
-    position: relative;
-    z-index: -2;
-}
-
-.head-stripe {
-    height: 15%;
-    width: 100%;
-    background-color: var(--green);
-    position: absolute;
-    top: 0;
-    z-index: -1;
+    background: linear-gradient(to bottom, var(--green) 0px, var(--green) 15vh, var(--background_gray) 0px, var(--background_gray) 100%);
 }
 
 .container {
@@ -62,6 +51,14 @@ img {
     width: 380px;
     flex-shrink: 0;
     background-color: var(--white);
+}
+
+
+/* CHAT AREA */
+
+.open-chat {
+    flex-grow: 1;
+    background-color: var(--light_green);
 }
 
 
