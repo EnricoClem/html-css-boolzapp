@@ -6,6 +6,7 @@
     --mid_gray: #b1b1b1;
     --light_gray: #eaeaea;
     --warm_gray: #f3eeeb;
+    --white: white;
 }
 
 * {
@@ -25,6 +26,7 @@ img {
 }
 
 
+/* BACKGROUND & CONTAINER */
 
 .app {
     width: 100vw;
@@ -49,7 +51,19 @@ img {
     height: 100%;
     margin: 0 auto;
     background-color: var(--warm_gray);
+    display: flex;
 }
+
+
+/* SIDEBAR */
+
+.sidebar {
+    height: 100%;
+    width: 380px;
+    flex-shrink: 0;
+    background-color: var(--white);
+}
+
 
 
 
