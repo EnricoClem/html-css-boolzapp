@@ -23,3 +23,19 @@ menu {
 img {
     max-width: 100%;
 }
+
+
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    padding: 2% 0;
+    background-color: var(--green);
+}
+
+.container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: var(--warm_gray);
+}
