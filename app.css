@@ -30,7 +30,18 @@ img {
     width: 100vw;
     height: 100vh;
     padding: 2% 0;
+    background-color: var(--background_gray);
+    position: relative;
+    z-index: -2;
+}
+
+.head-stripe {
+    height: 15%;
+    width: 100%;
     background-color: var(--green);
+    position: absolute;
+    top: 0;
+    z-index: -1;
 }
 
 .container {
