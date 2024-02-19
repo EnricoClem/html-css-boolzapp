@@ -81,4 +81,17 @@ img {
         width: 100%;
     }
 
+    .sidebar {
+        max-width: 82px;
+    }
+
+}
+
+/* Only phone */
+@media (max-width: 500px) {
+
+    .sidebar {
+        display: none;
+    }
+    
 }
