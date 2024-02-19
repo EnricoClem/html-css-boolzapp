@@ -1,3 +1,13 @@
+:root {
+    --green: #4d9288;
+    --light_green: #ddf8bf;
+    --background_gray: #dbdbd3;
+    --dark_gray: #6d7376;
+    --mid_gray: #b1b1b1;
+    --light_gray: #eaeaea;
+    --warm_gray: #f3eeeb;
+}
+
 * {
     margin: 0;
     padding: 0;
