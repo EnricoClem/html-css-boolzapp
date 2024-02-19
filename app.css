@@ -39,3 +39,21 @@ img {
     margin: 0 auto;
     background-color: var(--warm_gray);
 }
+
+
+
+
+/* MEDIA QUERY ______________________________________ */
+
+/* Phone and tablet */
+@media (max-width: 980px) {
+    
+    .app {
+        padding: 0;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+}
