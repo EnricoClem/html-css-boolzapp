@@ -1,6 +1,7 @@
 :root {
     --green: #4d9288;
     --light_green: #ddf8bf;
+    --light_blue: #a7d6f9;
     --background_gray: #dbdbd3;
     --dark_gray: #6d7376;
     --mid_gray: #b1b1b1;
@@ -15,6 +16,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Lato", sans-serif;
+  }
+
 ul,
 ol,
 menu {
@@ -25,8 +30,17 @@ img {
     max-width: 100%;
 }
 
+h1 {
+    font-size: 17px;
+}
 
-/* BACKGROUND & CONTAINER */
+h2 {
+    font-size: 14px;
+    color: var(--dark_gray);
+}
+
+
+/* BACKGROUND & CONTAINER _______________ */
 
 .app {
     width: 100vw;
@@ -44,7 +58,7 @@ img {
 }
 
 
-/* SIDEBAR */
+/* SIDEBAR _______________ */
 
 .sidebar {
     display: none;
@@ -54,6 +68,8 @@ img {
     background-color: var(--white);
 }
 
+/* Header ----- */
+
 .block-header {
     background-color: var(--light_gray);
     display: flex;
@@ -62,21 +78,21 @@ img {
     align-items: center;
 }
 
-.profile-card {
+.avatar-card {
     width: 70px;
     padding: 10px;
 }
 
-.profile-card img {
+.avatar {
     border-radius: 50%;
     object-fit: cover;
     height: 50px;
     width: 50px;
+    background-color: var(--white);
 }
 
 .headbar-menu {
     display: none;
-    flex-wrap: wrap;
     padding: 0 20px;
     gap: 20px;
 }
@@ -86,8 +102,36 @@ img {
     font-size: 25px;
 }
 
+/* Notify ----- */
 
-/* CHAT AREA */
+.notify-card {
+    display: none;
+    background-color: var(--light_blue);
+}
+
+.avatar .fa-solid {
+    color: var(--light_blue);
+    font-size: 20px;
+}
+
+.notify-card .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.notify-text h2 {
+    text-decoration: underline;
+}
+
+
+/* CHAT AREA ____________________ */
 
 .open-chat {
     flex-grow: 1;
@@ -125,9 +169,11 @@ img {
     .sidebar {
         max-width: 380px;
     }
-    
-    .headbar-menu {
+
+    .headbar-menu,
+    .notify-card {
         display: flex;
+        flex-wrap: wrap;
     }
 
 }
