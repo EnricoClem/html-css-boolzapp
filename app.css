@@ -65,7 +65,7 @@ h2 {
     height: 100%;
     width: 380px;
     flex-shrink: 0;
-    background-color: var(--white);
+    background-color: var(--light_gray);
 }
 
 /* Header ----- */
@@ -129,6 +129,10 @@ h2 {
 .notify-text h2 {
     text-decoration: underline;
 }
+
+/* Search ----- */
+
+
 
 
 /* CHAT AREA ____________________ */
