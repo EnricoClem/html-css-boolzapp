@@ -54,6 +54,26 @@ img {
     background-color: var(--white);
 }
 
+.block-header {
+    background-color: var(--light_gray);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-card {
+    width: 70px;
+    padding: 10px;
+}
+
+.profile-card img {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50px;
+    width: 50px;
+}
+
 
 /* CHAT AREA */
 
