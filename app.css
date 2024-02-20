@@ -70,7 +70,7 @@ h2 {
 
 /* Header ----- */
 
-.block-header {
+.block-info {
     background-color: var(--light_gray);
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +79,6 @@ h2 {
 }
 
 .avatar-card {
-    width: 70px;
     padding: 10px;
 }
 
@@ -149,6 +148,36 @@ h2 {
     flex-grow: 1;
 }
 
+/* Chat list */
+
+.chat-list {
+    width: calc(100% - 15px);
+}
+
+.chat-list .block-info {
+    background-color: var(--white);
+    border: 0.5px solid var(--light_gray);
+    display: flex;
+    justify-content: space-between;
+}
+
+.avatar-card.side {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.last-time {
+    align-self: baseline;
+    padding-top: 15px;
+    padding-right: 12px;
+}
+
+.last-time h2 {
+    font-size: 12px;
+}
+
 
 /* CHAT AREA ____________________ */
 
@@ -156,6 +185,8 @@ h2 {
     flex-grow: 1;
     background-color: var(--light_green);
 }
+
+
 
 
 
