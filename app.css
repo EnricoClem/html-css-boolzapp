@@ -74,6 +74,18 @@ img {
     width: 50px;
 }
 
+.headbar-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 20px;
+}
+
+.headbar-menu .fa-solid {
+    color: var(--mid_gray);
+    font-size: 25px;
+}
+
 
 /* CHAT AREA */
 
