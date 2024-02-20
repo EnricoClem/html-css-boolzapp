@@ -132,7 +132,22 @@ h2 {
 
 /* Search ----- */
 
+.search-bar {
+    padding: 8px;
+    display: none;
+}
 
+.search-bar .fa-solid {
+    color: var(--mid_gray);
+    font-size: 20px;
+    background-color: var(--white);
+    padding: 10px 22px 10px 15px;
+}
+
+.search-bar input {
+    border: none;
+    flex-grow: 1;
+}
 
 
 /* CHAT AREA ____________________ */
@@ -175,7 +190,8 @@ h2 {
     }
 
     .headbar-menu,
-    .notify-card {
+    .notify-card,
+    .search-bar {
         display: flex;
         flex-wrap: wrap;
     }
