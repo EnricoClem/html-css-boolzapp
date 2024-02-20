@@ -151,12 +151,14 @@ h2 {
 /* Chat list */
 
 .chat-list {
-    width: calc(100% - 15px);
+    width: 100%;
+    background-color: var(--white);
+    height: 100%;
 }
 
 .chat-list .block-info {
     background-color: var(--white);
-    border: 0.5px solid var(--light_gray);
+    border-top: 0.5px solid var(--light_gray);
     display: flex;
     justify-content: space-between;
 }
@@ -169,9 +171,14 @@ h2 {
 }
 
 .last-time {
+    display: none;
     align-self: baseline;
     padding-top: 15px;
     padding-right: 12px;
+}
+
+.avatar-info {
+    display: none;
 }
 
 .last-time h2 {
@@ -200,7 +207,7 @@ h2 {
     .sidebar {
         display: flex;
         flex-direction: column;
-        max-width: 82px;
+        max-width: 70px;
     }
     
 }
@@ -222,9 +229,18 @@ h2 {
 
     .headbar-menu,
     .notify-card,
-    .search-bar {
+    .search-bar,
+    .last-time {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .chat-list {
+        width: calc(100% - 15px);
+    }
+
+    .avatar-info {
+        display: block;
     }
 
 }
