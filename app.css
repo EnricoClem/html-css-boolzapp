@@ -151,11 +151,16 @@ h2 {
 /* Chat list */
 
 .chat-list {
-    width: 100%;
-    margin-right: 15px;
-    background-color: var(--white);
+    width: 99%;
     height: 100%;
     overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-list .block-info:last-child {
+    flex-grow: 1;
+    align-content: baseline;
 }
 
 .chat-list .block-info {
@@ -237,8 +242,8 @@ h2 {
         flex-wrap: wrap;
     }
 
-    .chat-list {
-        width: calc(100% - 15px);
+    .chat-list .block-info {
+        width: calc(100% - 14px);
     }
 
     .avatar-info {
