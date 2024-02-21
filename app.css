@@ -201,8 +201,29 @@ h2 {
 /* CHAT AREA ____________________ */
 
 .open-chat {
-    flex-grow: 1;
-    background-color: var(--light_green);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.headbar-menu .fa-solid {
+    color: var(--mid_gray);
+    font-size: 25px;
+}
+
+.chat-container {
+    height: 100%;
+}
+
+.chat-content {
+    height: 100%;
+    overflow-y: 1;
+    width: calc(100% - 10px);
+    background-image: url(./img/mine.jpg);
+}
+
+.block-info.bottom {
+    align-self: flex-end;
 }
 
 
