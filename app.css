@@ -213,19 +213,35 @@ h2 {
 
 .chat-container {
     height: 100%;
+    overflow-y: 1;
 }
 
-.chat-content {
+.chat-background {
     height: 100%;
-    overflow-y: 1;
     width: calc(100% - 10px);
     background-image: url(./img/mine.jpg);
 }
 
 .block-info.bottom {
-    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
+.block-info.bottom i {
+    display: none;
+    font-size: 20px;
+    color: var(--dark_gray);
+    padding: 20px 20px;
+    flex-shrink: 0;
+}
+
+.block-info.bottom input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 20px;
+}
 
 
 
@@ -245,6 +261,14 @@ h2 {
 
     .headbar-menu.main-chat {
         display: flex;
+    }
+
+    .block-info.bottom i {
+        display: inline-block;
+    }
+
+    .block-info.bottom input {
+        margin: 10px 0px;
     }
     
 }
