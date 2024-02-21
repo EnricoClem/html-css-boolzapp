@@ -66,6 +66,7 @@ h2 {
     width: 380px;
     flex-shrink: 0;
     background-color: var(--light_gray);
+    border-right: 0.5px solid var(--mid_gray);
 }
 
 /* Header ----- */
@@ -80,6 +81,10 @@ h2 {
 
 .avatar-card {
     padding: 10px;
+}
+
+.avatar-card.adjust {
+    padding-bottom: 6.5px;
 }
 
 .avatar {
@@ -215,6 +220,10 @@ h2 {
         display: flex;
         flex-direction: column;
         max-width: 70px;
+    }
+
+    .headbar-menu.main-chat {
+        display: flex;
     }
     
 }
